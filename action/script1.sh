@@ -1,2 +1,3 @@
 env | sort
-gh api /repos/:owner/:repo/commits | jq '. | length'
+# :owner/:repo only works if we have a checkout
+gh api /repos/$GITHUB_REPOSITORY/commits | jq '. | length'
