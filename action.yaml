@@ -1,5 +1,8 @@
 name: 'test'
 description: 'Testing'
+inputs:
+  GITHUB_TOKEN:
+    required: true
 runs:
   using: "composite"
   steps: 
