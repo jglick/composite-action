@@ -6,5 +6,5 @@ inputs:
 runs:
   using: "composite"
   steps: 
-    - run: $GITHUB_ACTION_PATH/action/script1.sh
+    - run: GITHUB_TOKEN=${{ inputs.GITHUB_TOKEN }} $GITHUB_ACTION_PATH/action/script1.sh
       shell: bash
